@@ -36,21 +36,33 @@ public class Book {
 
 // 4 getter method below
 
-  int get_id(int id) {
+  int get_id( ) {
        return id;
     }
 
-    String get_name(String name) {
+    String get_name( ) {
         return name;
     }
 
-    String get_author(String author) {
+    String get_author( ) {
         return author;
     }
 
-    int get_Quantity(int Quantity) {
+    int get_Quantity( ) {
         return Quantity;
     }
  
+   public String toFileString() {
+        return id + "," + name + "," + author + "," + Quantity;
+    }
 
+      public static Book fromFileString(String line) {
+        String[] data = line.split(",");
+        return new Book(
+                Integer.parseInt(data[0]),
+                data[1],
+                data[2],
+                Integer.parseInt(data[3])
+        );
+    }
 }
