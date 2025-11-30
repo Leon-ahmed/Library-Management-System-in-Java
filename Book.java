@@ -6,12 +6,6 @@ public class Book {
     private String author;
     private int Quantity;
 
-
-
-
-    
-
-
     // Book constructor
     public Book(int id, String name, String author, int Quantity) {
 
@@ -22,29 +16,29 @@ public class Book {
 
     }
 // 4 setter method below
-    void set_id(int id) {
+    public void set_id(int id) {
         this.id = id;
     }
 
-    void set_name(String name) {
+    public void set_name(String name) {
         this.name = name;
     }
 
-    void set_author(String author) {
+    public void set_author(String author) {
         this.author = author;
     }
 
-    void set_Quantity(int Quantity) {
+    public void set_Quantity(int Quantity) {
         this.Quantity = Quantity;
     }
 
 // 4 getter method below
 
-  int get_id( ) {
+  public int get_id( ) {
        return id;
     }
 
-    String get_name( ) {
+   public String get_name( ) {
         return name;
     }
 
