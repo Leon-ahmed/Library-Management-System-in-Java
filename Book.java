@@ -42,11 +42,11 @@ public class Book {
         return name;
     }
 
-    String get_author( ) {
+    public String get_author( ) {
         return author;
     }
 
-    int get_Quantity( ) {
+    public int get_Quantity( ) {
         return Quantity;
     }
  
